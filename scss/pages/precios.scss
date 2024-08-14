@@ -1,0 +1,81 @@
+.presupuesto__contenido{
+    color: white;
+    h2{
+        color: white;
+    }
+    .presupuesto__info{
+        border: 1px solid white;
+        background-image: linear-gradient(to top,$color-primario,rgb(31, 255, 50));
+        border-radius: 20px;
+        transition: all 0.5s ease;
+        img{
+            height: 40px;
+            width: 40px;
+        }
+        p{
+            @include media-query-small(){
+                margin-top: 10px;
+            }
+            @include media-query-mobile(){
+                margin-top: 10px;
+            }
+            @include media-query-tablet(){
+                margin-top: 10px;
+            }
+        }
+        @include media-query-small(){
+            width: 60vw;
+        }
+        @include media-query-mobile(){
+            width: 60vw;
+        }
+    }
+    .presupuesto__info:hover{
+        transition: all 0.5s ease;
+        box-shadow: 1px 5px 49px 1px $color-primario;
+        -webkit-box-shadow: 1px 5px 49px 1px $color-primario;
+        -moz-box-shadow: 1px 5px 49px 1px $color-primario;    
+    }
+}
+.presupuesto__billeteras{
+    section{
+        div{
+            .billeteras{
+                border-radius: 20px;
+                border: 2px solid $color-primario;
+                transition: all 1s ease;
+                @include media-query-small(){
+                    width: 80vw;
+                }
+                @include media-query-mobile(){
+                    width: 80vw;
+                }
+                @include media-query-tablet(){
+                    width: 80vw;
+                }
+            }
+            .billeteras:hover{
+                transform: scale(1.2,1.2);
+                transition: all 1s ease;
+            }
+        }
+    }
+}
+section{
+    .presupuesto__intro{
+        br{
+            @include media-query-small(){
+                display: none;
+            }
+            @include media-query-mobile(){
+                display: none;
+            }
+        }
+        @include media-query-small(){
+            margin: 20px;
+        }
+        @include media-query-mobile(){
+            margin: 30px;
+        }
+    }
+}
